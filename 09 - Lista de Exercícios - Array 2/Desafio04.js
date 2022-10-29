@@ -6,3 +6,16 @@ o usuário inseriu -1.
 Ex.: inseriu o número 8,
 a sequência deve começar da seguinte maneira 7 8 15 23  */
 
+var Fibonacci = []
+var numero = parseInt(prompt("Insira um número"))
+
+console.log("Número inserido = " + numero)
+
+Fibonacci[0] = numero - 1
+Fibonacci[1] = numero
+
+for (var index = 2; index < 10; index++) {
+    Fibonacci[index] = Fibonacci[index - 1] + Fibonacci [index - 2]
+}
+
+console.log(Fibonacci)
