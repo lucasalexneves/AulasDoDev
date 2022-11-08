@@ -2,7 +2,7 @@
 
 CalcularMedia(2, 10, 20); // Chamando/Executando a função
 PerguntarNome();
-console.log(PerguntarNome)
+console.log(PerguntarNome())
 
 function CalcularMedia(num1, num2, num3){
     //num1 = 2
