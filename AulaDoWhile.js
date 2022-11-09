@@ -1,11 +1,11 @@
 let contador = 0
 
-while (contador < 5){
+/* while (contador < 5){
     console.log(contador)
     contador++
-}
+} */
 
-/* do {
+do {
     console.log(contador)
     contador++
-}while(contador < 5) */
+}while(contador < 5) 
