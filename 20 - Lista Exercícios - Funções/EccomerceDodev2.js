@@ -258,8 +258,7 @@ function AddProdutos(nomeProduto, quantidadeAdicionado) {
 
     for (var index = 0; index < nomesCarrinho.length; index++) {
         if(nomeProduto == nomesCarrinho[index]){
-            QuantidadeCarrinho[index] = quantidadeAdicionado
-            PrecosCarrinho[index] = precos[index]
+            QuantidadeCarrinho[index] = QuantidadeCarrinho[index] + quantidadeAdicionado
             
         } else {
             nomesCarrinho[index] = nomeProduto
@@ -279,7 +278,7 @@ function ExcluirProdutoCarrinho(nomeProduto, quantidadeExcluido){
     for (var index = 0; index < nomesCarrinho.length; index++) {
         if(nomeProduto == nomesCarrinho[index] && quantidadeExcluido == QuantidadeCarrinho[index]){
             QuantidadeCarrinho[index] = 0
-            nomesCarrinho[index] = ''
+            nomesCarrinho[index] = 0
         } else if(nomeProduto == nomesCarrinho[index] && quantidadeExcluido < QuantidadeCarrinho[index]){
             QuantidadeCarrinho[index] = QuantidadeCarrinho[index] - quantidadeExcluido
         } else {
